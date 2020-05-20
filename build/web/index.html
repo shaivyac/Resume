@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Shaivya Chandra</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css--> 
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link href="dist/first-input-delay.js ">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- just in case viewer is using Internet Explorer -->
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <script>
+            function load() {
+                hide1()
+                hide2()
+            }
+            function show1()
+            {
+                document.getElementById("edu11").style.visibility = "hidden";
+
+                document.getElementById("edu21").style.visibility = "visible";
+
+                document.getElementById("box1").style.backgroundColor = "#ededed";
+
+            }
+
+            function hide1()
+            {
+                document.getElementById("edu21").style.visibility = "hidden";
+
+                document.getElementById("edu11").style.visibility = "visible";
+                document.getElementById("box1").style.backgroundColor = "white";
+
+            }
+
+            function show2()
+            {
+                document.getElementById("edu12").style.visibility = "hidden";
+
+                document.getElementById("edu22").style.visibility = "visible";
+                document.getElementById("box2").style.backgroundColor = "#ededed";
+
+
+            }
+
+            function hide2()
+            {
+                document.getElementById("edu22").style.visibility = "hidden";
+
+                document.getElementById("edu12").style.visibility = "visible";
+                document.getElementById("box2").style.backgroundColor = "white";
+
+            }
+            perfMetrics.onFirstInputDelay(function(delay, evt) {
+  ga('send', 'event', {
+    eventCategory: 'Perf Metrics',
+    eventAction: 'first-input-delay',
+    eventLabel: evt.type,
+    // Event values must be an integer.
+    eventValue: Math.round(delay),
+    // Exclude this event from bounce rate calculations.
+    nonInteraction: true,
+  });
+});
+            
+        </script>
+
+
+        <style>
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+
+
+    </head>
+
+
+    <body onload="load()">
+
+
+        <!-- Header-->
+        <header class="parallax">
+
+            <h1>Shaivya Chandra</h1>
+            <p>Masters in Computer Science Student
+                </br>
+                <a href="https://github.com/shaivyac"><i class="fa fa-github" aria-hidden="true" style="color: white"></i>
+                    <a href="https://www.linkedin.com/in/shaivyachandra/"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: white"></i>
+                    
+</a><span class="fa fa-envelope" aria-hidden="true" style="color: white" id="mail"></span>
+<a href="Shaivya Chandra.pdf" download>  <i class="fa fa-download" aria-hidden="true" style="color: white" id="mail"></i></a></p>
+
+        </header>
+<script>mail = document.getElementById("mail")
+            mail.onclick = function() {
+                window.open('mailto:sc2914@rit.edu');
+            }</script>
+
+        <div class="container">
+
+            <!-- Introduction-->
+            <section class="center">
+                <h1>Welcome!</h1>
+                <p>
+                    An enthusiastic graduate student with experience in  Data Management,Artificial Intelligence,Application development 
+                     looking for roles like Machine Learning Intern, Software Developer , Robotics, App Developer where I can not only utilize
+                    my knowledge but keep on learning</p>
+            </section>
+
+            <hr>
+            <!-- End container-->
+
+            <!-- Spotlight -->
+
+
+
+            <!-- New container-->
+            <div class="container">
+
+                <section class="education">	
+                    <h2>M.S. Computer Science from Rochester Institute of Technology.</h2>
+                </section>
+
+                <hr>
+
+                <!--Experience Tables-->
+                <section class="experience">
+                    <div class="row">
+                        <div class="grid-2">
+                            <h2>Rochester Institute of Technology</h2>
+                            <p>Frontend Lead Developer - LaForge</p>
+                            <p>Jan. 2020 - May. 2020</p>
+                        </div>
+                        <div class="grid-4">
+                            <ul>
+                                <li>Created the frontend for the infrastructure management for the National Collegiate Penetration Testing Competition.</li>
+                                <li>Was responsible for working remotely part time on Cyber Security Team.</li>
+                                <li>Worked on Angular JS to create web pages for the UI designs. </li>
+                                <li>Collaborated with teams to produce the maximum work possible in minimum time.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grid-2">
+                            <h2>APL Logistics</h2>
+                            <p>Senior Analyst- Logistics Application</p>
+                            <p>July. 2017 - Jun. 2019</p>
+                        </div>
+                        <div class="grid-4">
+                            <ul>
+                                <li>Designed analytic algorithms for optimizing logistics for the company clients like Starbucks and ESPIRIT Holdings by creating cross platform applications.</li>
+                                <li>Built an outlier detection and alerting for delivery exception.</li>
+                                <li>Interfaced with clients to plan the engineering deliverables and incorporated customer feedback from field reports.</li>
+                                <li>Maintained the end to end operations as the subject matter expert for Oracle transport management tool for South East Asia and Vietnam team by creating frameworks and database management.</li></ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grid-2">
+                            <h2>Hewlett Packard Enterprise</h2>
+                            <p>Trainee</p>
+                            <p>Jun. 2016 - Jul. 2016</p>
+                        </div>
+                        <div class="grid-4">
+                            <ul>
+                                <li>Utilized Struts with Hibernate framework to develop an interactive website
+                                    Recruitment System to match job candidates to the company.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grid-2">
+                            <h2>Aircel</h2>
+                            <p>IT Intern</p>
+                            <p>May. 2015 - Aug. 2015</p>
+                        </div>
+                        <div class="grid-4">
+                            
+                            <p>   Analyzed the packet routing statistics using CISCO packet tracer. This helped the
+                                team to improve the network performance</p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+                <section class="education">
+                    <div style="display: flex;" >
+                        <div class="grid-3" style="padding: 10px;margin-right: 10px">
+                            <h2>Rochester Institute of Technology</h2>
+                            <h3>Masters in  Computer Science</h3>
+                            <p>2019-21</p>
+                            <p>CGPA : 3.89</p>
+                            <button id="sub1">Courses</button>
+                                <button id="proj1">Projects</button>
+                        </div>
+                        <div class="grid-3" style="padding: 10px;margin-left: 20px">
+                            <h2>AK Technical University</h2>
+                            <h3>B.Tech in Computer Science</h3>
+                            <p>2013-17</p>
+                            <p>Percentage: 74.6</p>
+                            <button id="sub2">Courses</button>
+                                <button id="caps1">Capstone</button>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+               
+                 <!-- Modal content 
+                <section>
+                    <div style="display: flex;" >
+                        <div id = "box1" style="border-style: groove;width: 300px;
+                             height: 150px;
+                             border: 1px solid lightgray;
+                             box-sizing: border-box; flex: 50%;margin: 10px;"  onmouseover="show1()" onmouseout="hide1()" > 
+                            <div id="edu11" style="position: absolute;padding: 4.8px;">  <h2 style="text-align: center" >Rochester Institute of Technology </h2>
+                                <h3 style="text-align: center" > 2019-21</h3>
+                            </div>
+                            <div id="edu21" style="position: absolute;align-content: center;text-align: center">
+                                <h2 style="text-align: center;margin-left:10px ;padding: 5px"  > Masters in  Computer Science</h2>
+                                <h3  style="text-align: center;" >CGPA: 4.0</h3>
+                                <button id="sub1">Courses</button>
+                                <button id="proj1">Projects</button>
+                            </div>
+
+                        </div>
+
+                        <div id = "box2" style="border-style: groove;width: 300px;
+                             height: 150px;
+                             border: 1px solid lightgray;
+                             box-sizing: border-box;flex: 50%;margin: 10px"  onmouseover="show2()" onmouseout="hide2()" > 
+                            <div id="edu12" style="position: absolute;padding: 4.8px; ">  
+                                <h2 style="text-align: center;margin-left:50px" >AK Technical University </h2>
+                                <h3 style="text-align: center" > 2013-17</h3>
+                            </div>
+                            <div id="edu22" style="position: absolute;align-content: center;text-align: center">
+                                <h2 style="text-align: center;margin-left:10px ;padding: 5px"  > B.Tech in  Computer Science</h2>
+                                <h3  style="text-align: center;" >Percentage 74.6</h3>
+                                
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+            </div> !-->
+<div id="projects1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close6">&times;</span>
+                    <h2>Projects</h2>
+                    
+                        <h3>Say it like you see it :Using Common Sense For Visual Interpretation </h3>
+                        <p>Exploring  the concept of 
+commonsense knowledge for object and action recognition
+in images and the different approaches for getting the best result.</p>
+                        <h3>20 Years University Data Analysis </h3>
+                        <p>College Score card is kept for the comparison of the
+colleges based on their Financial Aid,Admission Rate,Program Information and
+Admission Statistics.
+</br>
+<a href="https://www.kaggle.com/shaivyac/20-years-us-university-dataset">Dataset </a>
+                        </p>
+                        <h3>English vs Dutch text classification - Beginner</h3>
+                        <p>Distinguishing English and Dutch lexically using Adaboost and Decision Tree to train and predict the two languages.
+                            </br><a href="https://www.kaggle.com/mdhrumil/english-dutch-text-classification-nlp-beginner">Dataset </a> </p>
+                        
+                        
+                      
+                    
+                </div>
+
+            </div>
+
+            <!-- The Modal -->
+            <div id="subjects1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close1">&times;</span>
+                    <h2>Courses</h2>
+                    <ul>
+                        <li> Advance Object-Oriented Programming</li>
+                        <li>Foundation of Comp Science Theory</li>
+                        <li>Computation Problem Solving</li>
+                        <li>Intro to Big Data</li>
+                        <li>Intro to AI</li>
+                        <li>Foundation of Algorithms</li>
+                        <li>Foundations of Computer Visions</li>
+                        <li>Data Cleaning and Preparation</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="capstone1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close3">&times;</span>
+                    <h2>AICE : ARTIFICIAL INTELLIGENCE CODE EVALUATOR <a href="https://github.com/shaivyac/aice"><i class="fa fa-github" aria-hidden="true"></i>
+</a></h2>
+                    <ul>
+                        <li>Developed an automated system for detecting code correctness during exams
+                            for hand-written papers.</li>
+                        <li>Used computer vision-based character recognition to scan code, and designed
+                            a back-end system to evaluate the code in a containerized environment</li>
+                    </ul>
+                </div>
+                
+
+            </div>
+
+           
+            <!-- Modal content --><div id="subjects2" class="modal">
+                <div class="modal-content">
+                    <span class="close2">&times;</span>
+                    <h2>Courses</h2>
+                    <ul>
+                        <li>Artificial Intelligence</li>
+                        <li>Computer Graphics</li>
+                        <li>Distributed System</li>
+                        <li>Distributed Database</li>
+                        <li>Compilers</li>
+                        <li>Software Engineering</li>
+                        <li>Computer Architecture</li>
+                        <li>Algorithms</li>
+                        <li>Formal Language</li>
+                        <li>Numerical & Statistical Techniques</li>
+                        <li>Graph Theory</li>
+                        <li>Programming Languages</li>
+                        <li>Computer Networks</li>
+                        <li>Cryptographic & Network Security</li>
+                        <li>Parallel Algorithms</li>
+                        <li>Operating Systems</li>
+                        <li>Data Structures</li>
+                        <li>Digital Image Processing</li>
+                        <li>Semantic Web & Web Services</li>
+                        <li>Real Time System</li>
+
+                    </ul>
+                </div>
+
+            </div>
+           <!-- Modal content --><div id="skillset1" class="modal">
+                <div class="modal-content">
+                    <span class="close4">&times;</span>
+                    <h2>Programming Skills</h2>
+                    <img src="Skillsetp.png">
+                    
+                </div>
+
+            </div>
+           <!-- Modal content --><div id="skillset2" class="modal">
+                <div class="modal-content">
+                    <span class="close5">&times;</span>
+                    <h2>Framework & API</h2>
+                    <img src="Skillsetf.png">
+                    
+                </div>
+
+            </div>
+
+            <script>
+            // Get the modal
+            var modal1 = document.getElementById("subjects2");
+
+            // Get the button that opens the modal
+            var btn1 = document.getElementById("sub2");
+
+            // Get the <span> element that closes the modal
+            var span1 = document.getElementsByClassName("close2")[0];
+
+            // When the user clicks the button, open the modal 
+            btn1.onclick = function() {
+              modal1.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span1.onclick = function() {
+              modal1.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal1) {
+                modal1.style.display = "none";
+              }
+            }
+
+            var subjects1 = document.getElementById("subjects1");
+
+            // Get the button that opens the modal
+            var btn2 = document.getElementById("sub1");
+
+            // Get the <span> element that closes the modal
+            var span2 = document.getElementsByClassName("close1")[0];
+
+            // When the user clicks the button, open the modal 
+            btn2.onclick = function() {
+              subjects1.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span2.onclick = function() {
+              subjects1.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == subjects1) {
+                subjects1.style.display = "none";
+              }
+            }
+
+            var capstone1 = document.getElementById("capstone1");
+
+            // Get the button that opens the modal
+            var btn3 = document.getElementById("caps1");
+
+            // Get the <span> element that closes the modal
+            var span3 = document.getElementsByClassName("close3")[0];
+
+            // When the user clicks the button, open the modal 
+            btn3.onclick = function() {
+              capstone1.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span3.onclick = function() {
+              capstone1.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == capstone1) {
+                capstone1.style.display = "none";
+              }
+            }
+
+
+           var projects1 = document.getElementById("projects1");
+
+            // Get the button that opens the modal
+            var proj1 = document.getElementById("proj1");
+
+            // Get the <span> element that closes the modal
+            var close6 = document.getElementsByClassName("close6")[0];
+
+            // When the user clicks the button, open the modal 
+            proj1.onclick = function() {
+              projects1.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            close6.onclick = function() {
+              projects1.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == projects1) {
+                projects1.style.display = "none";
+              }
+            }
+
+            </script>
+            <hr>
+            <section>
+                <h1 style="text-align: center">Research Work </h1>
+                <h2 style="text-align: center">Minimizing Distortion In Audio Steganography </h2>
+                <h3 style="text-align: center">PRESENTED AT THE 4TH IEEE CONFERENCE ON COMPUTING FOR
+                    SUSTAINABLE GLOBAL DEVELOPMENT, MAR 2017 </br><a href="https://bvicam.ac.in/news/INDIACom%202017%20Proceedings/Main/papers/1447.pdf" style="text-align: center">Paper</a> </h3>
+
+                <p>Worked on cyber-security by removing distortion from the audio steganography
+                    technique like Parity coding, Least Significant Bit coding, Phase Coding. .This technique replaces each 4th layer LSB by data bit.
+                    This is way of masking data with a great bit rate of 16Kbps
+                    which is an optimum bit rate among all other techniques. By
+                    inducing the 4th layer LSB technique we tried to minimized the
+                    distortion in the stego file, inducing transparency. The masked
+                    data was recovered without any faults. </p>
+
+
+
+            </section>
+            <hr>
+            
+            <section>
+                <!--List of skills-->
+                <div class="row">
+                    <div class="grid-2">
+                        <h1>Skills</h1>
+                        <h2>Programming  
+                            <button   id="skill1"><i class="fa fa-bar-chart" style="size: 10px"></i></button></h2> 
+                        Java • Python • JavaScript • C
+                        C# • CSS • Xamarin • MySQL • Angular
+                        <h2>Framework|API  <button   id="skill2"><i class="fa fa-bar-chart"></i></button></h2>
+                        Spring • Struts • Hibernate• Tesseract
+                        API •Spark•Matplotlib•Numpy•Dataframe
+
+                    </div>
+                    <script>
+                         var skillset1 = document.getElementById("skillset1");
+
+            // Get the button that opens the modal
+            var btn4 = document.getElementById("skill1");
+
+            // Get the <span> element that closes the modal
+            var span4 = document.getElementsByClassName("close4")[0];
+
+            // When the user clicks the button, open the modal 
+            btn4.onclick = function() {
+              skillset1.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span4.onclick = function() {
+              skillset1.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == skillset1) {
+                skillset1.style.display = "none";
+              }
+            }
+            var skillset2 = document.getElementById("skillset2");
+
+            // Get the button that opens the modal
+            var btn5 = document.getElementById("skill2");
+
+            // Get the <span> element that closes the modal
+            var span5 = document.getElementsByClassName("close5")[0];
+
+            // When the user clicks the button, open the modal 
+            btn5.onclick = function() {
+              skillset2.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span5.onclick = function() {
+              skillset2.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == skillset2) {
+                skillset2.style.display = "none";
+              }
+            }
+                        </script>
+
+                    <div class="grid-4">
+                        <h1>Leadership</h1>
+                        <h2><a href="https://www.udaanindiafoundation.org/">Udaan</a></h2>
+                        <p>Ran classes in computer programming for underprivileged youth in Mumbai slums.</p>
+                        <h2><a href="https://chalrangde.com/">Chal Rang De</a></h2>
+                        <p>I organized safety improvements for Indian railways. We identified critical
+accident-prone locations and painted it with hot melt marking reflective paint.</p>
+                        <h2>Dramatics</h2>
+                        <p>Organized Cultural events for college students as well as school students in the
+college. Was responsible for getting sponsors and managing the events</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Footer-->
+            <footer class="center">
+                <hr>
+                <span>&copy; Shaivya Chandra 2020</span>
+            </footer>
+
+        </div><!-- End Container -->
+<script src="/__/firebase/7.14.4/firebase-app.js"></script>
+
+  <!-- Add the Performance Monitoring library -->
+  <script src="/__/firebase/7.14.4/firebase-performance.js"></script>
+  <script>
+    var perf = firebase.performance();
+    // ...
+  </script>
+    </body>
+</html>
